@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reg.css">
+    <title>WF| details</title>
+</head>
+<body>
+    <div class="container w-75">
+        <div class="card ">
+            <div class="main active">
+                <div class="top-div">
+                    <div class="msg-img">
+                        <!-- <img src="/assets/img/favicons/wflogo.png"> -->
+                        <h3>WorkFlow</h3>
+                    </div>
+                    <h2>Few more Steps</h2>
+                    <p>Basic Details</p>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Username" require id="f_name">
+                </div>
+                <div class="input-text">
+                    <input type="text" name="fname" placeholder ="First Name" required>
+                </div>
+                <div class="input-text"> 
+                    <input type="text" name="mname" placeholder ="Middle Name">
+                </div>
+                <div class="input-text">
+                    <input type="text" name="lname" placeholder ="Last Name" required>
+                </div>
+                <div class="buttons">
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+            <div class="main social">
+                <div class="top-div">
+                    <div class="msg-img">
+                        <!-- <img src="https://imgur.com/iyB9qOR.png"> -->
+                        <h3>WorkFlow</h3>
+                    </div>
+                    <h2>Few more steps</h2>
+                    <p>Social Profiles</p>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your facebook url here.">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your twitter url here.">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your linkedin url here.">
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your dribbble url here.">
+                    <i class="fa fa-dribbble"></i>
+                </div>
+                <div class="buttons">
+                    <button class="previous-btn">Previous</button>
+                    <button class="next-btn">Next</button>
+                    
+                </div>
+            </div>
+            <div class="main">
+                <div class="top-div">
+                    <div class="msg-img">
+                        <!-- <img src="https://imgur.com/iyB9qOR.png"> -->
+                        <h3>WorkFlow</h3>
+                    </div>
+                    <h2>Few more Steps</h2>
+                    <p>Personal Details</p>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder="dd/mm/yyyy" data-slots="dmy" require >
+                  
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your nationality url here." require>
+                   
+                </div>
+                <div class="input-text">
+                     <select>
+                         <option>Select Gender</option>
+                         <option>Male</option>
+                         <option>Female</option>
+                         <option>Others</option>
+                     </select>
+                </div>
+                <div class="input-text">
+                    <input type="text" placeholder ="Enter your address url here.">
+                    
+                </div>
+                <div class="buttons">
+                    <button class="previous-btn">Previous</button>
+                    <button class="submit-btn">Submit</button>
+                    
+                </div>
+            </div>
+            <div class="main">
+                <div class="top-div">
+                    <div class="msg-img">
+                        <!-- <img src="https://imgur.com/iyB9qOR.png"> -->
+                        <h3>WorkFlow</h3>
+                    </div>
+                </div>
+                <div class="checkmark">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+               </div>
+               <p class="congratulations">Congratulations Mr./Mrs. <span id="s_name"></span> your details have been successfully added.</p>
+            </div>
+    </div>
+    <script src="reg.js"></script>
+    
+</body>
+</html>
