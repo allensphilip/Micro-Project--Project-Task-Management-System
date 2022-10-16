@@ -44,15 +44,15 @@ function updateform(){
 
 function validate_form(){
 
-var validate=true;
-var inputs= document.querySelectorAll(".main.active input");
-inputs.forEach(function(inpt){
-inpt.classList.remove('warning');
-if(inpt.hasAttribute("require")){
-if(inpt.value.length==0){
-validate=false;
-inpt.classList.add('warning');
-}
+    var validate=true;
+    var inputs= document.querySelectorAll(".main.active input");
+    inputs.forEach(function(inpt){
+    inpt.classList.remove('warning');
+    if(inpt.hasAttribute("require")){
+    if(inpt.value.length==0){
+    validate=false;
+    inpt.classList.add('warning');
+    }
 }
 
 });
