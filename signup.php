@@ -30,6 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="login/css/main.css">
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="css/passval.css"> -->
 
 	<!--===============================================================================================-->
 </head>
@@ -69,14 +70,18 @@
 						</span>
 					</div>
 
-          <div class="wrap-input100 validate-input" data-validate = "Re-enter password">
+          	<div class="wrap-input100 validate-input" data-validate = "Re-enter password">
 						<input class="input100" type="password" name="cpassword" id="confirm_password" placeholder="Confirm Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
-          <span id='message'></span>
+					<span id='letter'></span>
+					<span id="capital"></span>
+					<span id="number"></span>
+					<span id="length"></span>
+         			<span id='message'></span>
 					
 					<div class="container-login100-form-btn">
 						<button type="submit" name='submit' class="login100-form-btn" value="submit">
@@ -118,6 +123,5 @@
 <!--===============================================================================================-->
 	<script src="login/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 </body>
 </html>

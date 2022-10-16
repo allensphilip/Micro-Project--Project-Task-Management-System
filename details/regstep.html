@@ -21,21 +21,26 @@
                     <p>Basic Details</p>
                 </div>
                 <div class="input-text">
-                    <input type="text" placeholder ="Username"  id="f_name" require  onchange="validate_form()">
+                    <input type="text" placeholder ="Username"  id="f_name" require>
                 </div>
                 <div class="input-text">
-                    <input type="text" name="fname" placeholder ="First Name" require  onkeyup="validate_form()">
+                    <input type="text" name="fname" placeholder ="First Name" require>
                 </div>
                 <div class="input-text"> 
                     <input type="text" name="mname" placeholder ="Middle Name">
                 </div>
                 <div class="input-text">
-                    <input type="text" name="lname" placeholder ="Last Name" require  onkeyup="validate_form()">
+                    <input type="text" name="lname" placeholder ="Last Name" require>
                 </div>
+                
                 <div class="buttons">
                     <button class="next-btn">Next</button>
                 </div>
+                <div class="alert alert-danger" role="alert" id="msg1">
+    
+                </div>
             </div>
+            
             <div class="main social">
                 <div class="top-div">
                     <div class="msg-img">
@@ -61,6 +66,7 @@
                     <input type="text" placeholder ="Enter your dribbble url here.">
                     <i class="fa fa-dribbble"></i>
                 </div>
+
                 <div class="buttons">
                     <button class="previous-btn">Previous</button>
                     <button class="next-btn">Next</button>
@@ -96,6 +102,7 @@
                     <input type="text" placeholder ="Enter your address url here.">
                     
                 </div>
+                
                 <div class="buttons">
                     <button class="previous-btn">Previous</button>
                     <button class="submit-btn">Submit</button>

@@ -23,13 +23,12 @@ previous_click.forEach(function(butn){
 
 submit_click.addEventListener('click',function(){
     if(!validate_form()) return false;
-    var f_name = document.getElementById("f_name"); 
-var s_name = document.getElementById("s_name");
-      s_name.innerHTML = f_name.value;
-      forumnum++; 
-      
-    updateform(); 
-    
+        var f_name = document.getElementById("f_name"); 
+        var s_name = document.getElementById("s_name");
+        s_name.innerHTML = f_name.value;
+        forumnum++; 
+        updateform();
+           
 });
 
 
@@ -52,6 +51,7 @@ function validate_form(){
     if(inpt.value.length==0){
     validate=false;
     inpt.classList.add('warning');
+    document.getElementById("msg1").innerHTML = "*Please fill all the relevnt fields";
     }
 }
 
@@ -83,4 +83,4 @@ return i<0? prev[prev.length-1]: back? prev[i-1] || first: i; }); el.value=clean
     el.addEventListener("focus", format);
     el.addEventListener("blur", () => el.value === pattern && (el.value=""));
     }
-    });
+});
